@@ -10,9 +10,11 @@ int main() {
     scanf("%d", &x);
     printf("Digite o valor do expoente: ");
     scanf("%d", &y);
-    getchar();
+    getchar(); //clear new line char from buffer
     printf("A potência com a base %d e expoente %d é igual a: %0.lf\n", x, y, pow(x,y));
     printf("Qual seu nome?");
     fgets(name, sizeof(name), stdin);
     printf("\nOlá, %s", name);
+
+    return 0;
 }
